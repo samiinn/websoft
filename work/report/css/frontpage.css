@@ -1,48 +1,49 @@
 * {
-    box-sizing: border-box;
-    margin: 0 0 0 0;
-  }
-  *,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 0 0 0;
 }
-  a{
 
-      display: block;
-      height: 100%;
-      width: 100%;
-      font-weight: 900;
-      font-size: 32px;
-      font-family: Arial, Helvetica, sans-serif;
-      text-decoration: none;
-      color: black;
-      text-align: center;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 25%;
-    padding-top: 300px;
-    height:100vh;
-    text-transform: uppercase;
-    text-align: center;
-    
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-  }
-  a:hover{
-      color:white;
+a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-weight: 900;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
 
-  }
-  .column:hover{
-    padding-top: 290px;
-  }
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+/* Create three equal columns that floats next to each other */
+
+.column {
+  float: left;
+  width: 25%;
+  padding-top: 300px;
+  height: 100vh;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+a:hover {
+  color: white;
+}
+
+.column:hover {
+  padding-top: 290px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

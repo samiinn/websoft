@@ -2,7 +2,7 @@
  * Comments are written as C++ style. 
  */
 
- @import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 
 html {
 	overflow-y: scroll;
@@ -16,7 +16,7 @@ html {
 }
 .wrapper-reports{
 	margin: 0 auto;
-    width: 700px;
+	width: 700px;
 	overflow: hidden;
 	text-align: justify;
 }
@@ -29,6 +29,9 @@ html {
 .report-body{
 	background-color: #347474;
 	text-align: center;
+	height: 100%;
+
+	
 }
 
 h1{
@@ -164,4 +167,48 @@ div.fa-instagram {
 	font-size: 18px;
 	color: blanchedalmond;
 }
-	  
+#about-h1{
+	color: #ff5151;
+	margin-left: 340px;
+}
+.body-about{
+	background-color: #21243d;
+}
+.paragraph-about,.websoft-link{
+	color: blanchedalmond;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+.websoft-link{
+	text-decoration: underline;
+}
+.websoft-link:hover{
+	color: brown;
+}
+#web-img{
+width: 250px;
+height: 250px;
+
+}
+
+
+.web-img-div{
+
+	display: block;
+	padding-left: 10px;
+	width: 300px;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+	
+}
+.about-para-div{
+  text-align: justify;
+    width: 500px;
+    font-size: 16px;
+    font-style: oblique;
+    font-weight: 300;
+	float:left; /* add this */
+	margin-left: 110px;
+    
+
+
+}

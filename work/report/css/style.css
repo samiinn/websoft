@@ -220,3 +220,34 @@ hr {
 	/* add this */
 	margin-left: 110px;
 }
+
+#france {
+	display: none;
+	width: 300px;
+	height: 200px;
+	background: linear-gradient(to right, #002395 calc(100% / 3), white calc(100% / 3), white calc(100% / 3 * 2), #ED2939 calc(100% / 3 * 2));
+}
+
+#finland {
+	display: none;
+	width: 300px;
+	height: 200px;
+	background: linear-gradient(to bottom, transparent 35%, #003580 35%, #003580 60%, transparent 60%), linear-gradient(to right, transparent 30%, #003580 30%, #003480 45%, transparent 45%), white;
+}
+
+#greece {
+	display: none;
+	width: 300px;
+	height: 200px;
+	background-image: repeating-linear-gradient(to bottom, #0D5EAF, #0D5EAF calc(120px / 9), white calc(120px / 9), white calc(120px / 9 * 2));
+	position: relative;
+}
+
+
+#greece:before {
+	position: absolute;
+	content: "";
+	width: calc(120px / 9 * 5);
+	height: calc(120px / 9 * 5);
+	background: linear-gradient(to bottom, transparent calc(120px / 9 * 2), white calc(120px / 9 * 2), white calc(120px / 9 * 3), transparent calc(120px / 9 * 3)), linear-gradient(to right, transparent calc(120px / 9 * 2), white calc(120px / 9 * 2), white calc(120px / 9 * 3), transparent calc(120px / 9 * 3)), #0D5EAF;
+}

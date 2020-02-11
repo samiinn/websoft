@@ -251,3 +251,12 @@ hr {
 	height: calc(120px / 9 * 5);
 	background: linear-gradient(to bottom, transparent calc(120px / 9 * 2), white calc(120px / 9 * 2), white calc(120px / 9 * 3), transparent calc(120px / 9 * 3)), linear-gradient(to right, transparent calc(120px / 9 * 2), white calc(120px / 9 * 2), white calc(120px / 9 * 3), transparent calc(120px / 9 * 3)), #0D5EAF;
 }
+.flag-body{
+	background-color: #EEF5DB;
+}
+.a-tag-flags{
+	color: black;
+}
+.a-tag-flags:hover{
+	color: brown;
+}

@@ -31,6 +31,7 @@ html {
 	background-color: #347474;
 	text-align: center;
 	height: 100%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
@@ -259,4 +260,7 @@ hr {
 }
 .a-tag-flags:hover{
 	color: brown;
+}
+.report-questions{
+	font-weight: bold;
 }

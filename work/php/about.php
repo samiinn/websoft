@@ -15,9 +15,6 @@
         <?php require "./view/header.php" ?>
     </header>
 
-
-
-
     <div class="wrapper">
         <h1 id="about-h1">About</h1>
         <div class="about-para-div">

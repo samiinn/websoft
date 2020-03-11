@@ -8,6 +8,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Http;
+using webapp.Services;
+using webapp.Models;
+using System.Text.Json;
 
 namespace webapp
 {
@@ -24,6 +28,8 @@ namespace webapp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddControllers();
+            services.AddTransient<JsonReader>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +56,16 @@ namespace webapp
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapGet("/accounts", (context) =>
+                {
+                    var accounts =
+                    app.ApplicationServices.GetService<JsonReader>()
+                    .GetAccounts();
+                    var json =
+                    JsonSerializer.Serialize<IEnumerable<Account>>(accounts);
+                    return context.Response.WriteAsync(json);
+                });
+                endpoints.MapControllers();
             });
         }
     }

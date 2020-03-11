@@ -37,7 +37,7 @@ EOD;
     $sql = <<<EOD
 SELECT
     *
-FROM instruments
+FROM tech
 ;
 EOD;
 
@@ -55,8 +55,7 @@ $res = $stmt->fetchAll();
 <head>
     <meta charset="utf-8">
     <title>Search</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="poop.png">
+    <link rel="stylesheet" href="./css/schools.css">
 </head>
 
 

@@ -17,6 +17,5 @@ function connectToDB(array $dsn)
         print_r($dsn);
         throw $e;
     }
-
     return $db;
 }

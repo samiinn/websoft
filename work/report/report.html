@@ -280,11 +280,10 @@
                     Not to include front-end JavaScript libraries with known security vulnerabilities.<br><br>
                     eppnetwork.com: Avoid enormous network payloads. <br> Having a more efficient cache policy.<br>
                     Avoid chaining critical requests.<br><br>
-                    hkr.se: Consider lazy-loading offscreen and hidden images after all critical resources have finished
-                    loading to lower time to interactive.<br> Remove dead rules from stylesheets and defer the loading
-                    of CSS not used for above-the-fold content to reduce unnecessary bytes consumed by network
-                    activity.<br> Consider reducing the time spent parsing, compiling, and executing JS. You may find
-                    delivering smaller JS payloads helps with this.<br><br>
+                    hkr.se: In order to lower the time to interactive, offscreen and hidden images can be loaded after the necessary resources has been loaded.
+                    Avoid importing unused CSS rules.
+                    Reduction in the time that is used to parse, compile and execute the JS code and having smaller JS payloads can help the matter.
+                    <br><br>
                 </p>
                 <p class="report-questions">
                     What is your TIL for this course section?</p>
